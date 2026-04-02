@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinuxPro | Professional Linux Guide</title>
+    <title>LinuxPro | Professionele Linux Gids</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,10 +13,14 @@
         <div class="container header-inner">
             <a href="#hero" class="brand">LinuxPro</a>
             <nav class="site-nav">
-                <a href="#overview">Overview</a>
-                <a href="#distros">Distros</a>
-                <a href="#benefits">Benefits</a>
-                <a href="#learn-more">Learn</a>
+                <a href="#overview">Overzicht</a>
+                <a href="#distros">Distributies</a>
+                <a href="#benefits">Voordelen</a>
+                <a href="#learn-more">Leren</a>
+                <label for="language-selector"></label><select id="language-selector" class="language-selector" onchange="switchLanguage(this.value)">
+                    <option value="nl">🇳🇱 NL</option>
+                    <option value="en">🇬🇧 EN</option>
+                </select>
             </nav>
         </div>
     </header>
@@ -24,12 +28,12 @@
     <main>
         <section id="hero" class="hero">
             <div class="container hero-content">
-                <p class="eyebrow">Open source. Secure. Built for modern computing.</p>
-                <h1>Linux for professionals, makers, and teams.</h1>
-                <p class="hero-copy">Discover Linux distributions, core advantages, and the strength of an ecosystem trusted by servers, cloud platforms, developers, and embedded systems.</p>
+                <p class="eyebrow">Open source. Veilig. Gebouwd voor modern computergebruik.</p>
+                <h1>Linux voor professionals, makers en teams.</h1>
+                <p class="hero-copy">Ontdek Linux distributies, kernvoordelen en de kracht van een ecosysteem dat wordt vertrouwd door servers, cloudplatforms, ontwikkelaars en embedded systemen.</p>
                 <div class="hero-actions">
-                    <a href="#distros" class="btn btn-primary">Explore Distros</a>
-                    <a href="#benefits" class="btn btn-secondary">Why Linux?</a>
+                    <a href="#distros" class="btn btn-primary">Verken Distributies</a>
+                    <a href="#benefits" class="btn btn-secondary">Waarom Linux?</a>
                 </div>
             </div>
         </section>
@@ -37,32 +41,35 @@
         <section id="overview" class="section section-overview">
             <div class="container split-grid">
                 <div>
-                    <h2>What is Linux?</h2>
-                    <p>Linux is a secure, open source kernel powering a wide ecosystem of operating systems. From lightweight desktop environments to enterprise-grade server deployments, it delivers stability, performance, and flexibility.</p>
-                    <p>Its modular architecture and community-driven development make it ideal for professionals who need control, transparency, and long-term reliability.</p>
+                    <h2>Wat is Linux?</h2>
+                    <p>Linux is een veilige, open source kernel die een breed ecosysteem van besturingssystemen aandrijft. Van lichtgewicht desktopomgevingen tot enterprise-grade serverimplementaties, het levert stabiliteit, prestaties en flexibiliteit.</p>
+                    <p>Zijn modulaire architectuur en community-gedreven ontwikkeling maken het ideaal voor professionals die controle, transparantie en langetermijnbetrouwbaarheid nodig hebben.</p>
                 </div>
                 <div class="info-card">
-                    <h3>Designed for growth</h3>
-                    <p>Linux supports cloud-native infrastructure, container platforms, professional development workflows, and mission-critical systems with the same dependable foundation.</p>
+                    <h3>Ontworpen voor groei</h3>
+                    <p>Linux ondersteunt cloud-native infrastructuur, containerplatforms, professionele ontwikkelworkflows en missiekritische systemen met dezelfde betrouwbare basis.</p>
                 </div>
             </div>
         </section>
 
         <section id="distros" class="section section-cards">
             <div class="container">
-                <h2>Popular distributions</h2>
+                <h2>Populaire distributies</h2>
                 <div class="card-grid">
                     <article class="card">
                         <h3>Ubuntu</h3>
-                        <p>A polished desktop and server experience with wide hardware support and enterprise-ready updates.</p>
+                        <p>Een gepolijste desktop- en serverervaring met brede hardwareondersteuning en enterprise-ready updates.</p>
+                        <a href="https://ubuntu.com" target="_blank" rel="noreferrer" class="btn btn-secondary">Bezoek Ubuntu</a>
                     </article>
                     <article class="card">
                         <h3>Fedora</h3>
-                        <p>An innovation-focused distribution delivering the latest open source tools and cloud technologies.</p>
+                        <p>Een op innovatie gerichte distributie die de nieuwste open source tools en cloudtechnologieën levert.</p>
+                        <a href="https://fedoraproject.org" target="_blank" rel="noreferrer" class="btn btn-secondary">Bezoek Fedora</a>
                     </article>
                     <article class="card">
                         <h3>Debian</h3>
-                        <p>Stable, secure, and community-driven. A strong base for servers and long-term deployments.</p>
+                        <p>Stabiel, veilig en community-gedreven. Een sterke basis voor servers en langetermijnimplementaties.</p>
+                        <a href="https://debian.org" target="_blank" rel="noreferrer" class="btn btn-secondary">Bezoek Debian</a>
                     </article>
                 </div>
             </div>
@@ -70,19 +77,19 @@
 
         <section id="benefits" class="section section-benefits">
             <div class="container">
-                <h2>The Linux advantage</h2>
+                <h2>Het Linux voordeel</h2>
                 <div class="benefit-grid">
                     <div class="benefit-item">
-                        <h3>Security</h3>
-                        <p>Regular updates, permissions controls, and a fast response cycle keep Linux systems resilient.</p>
+                        <h3>Veiligheid</h3>
+                        <p>Regelmatige updates, permissiecontroles en een snelle responscyclus houden Linux-systemen veerkrachtig.</p>
                     </div>
                     <div class="benefit-item">
-                        <h3>Performance</h3>
-                        <p>Lightweight kernels and efficient resource usage are ideal for high-performance workloads.</p>
+                        <h3>Prestaties</h3>
+                        <p>Lichtgewicht kernels en efficiënt resourcegebruik zijn ideaal voor high-performance workloads.</p>
                     </div>
                     <div class="benefit-item">
-                        <h3>Flexibility</h3>
-                        <p>Build exactly the environment you need, from minimal servers to full-featured desktop workstations.</p>
+                        <h3>Flexibiliteit</h3>
+                        <p>Bouw precies de omgeving die je nodig hebt, van minimale servers tot volledig uitgeruste desktop werkstations.</p>
                     </div>
                 </div>
             </div>
@@ -90,18 +97,19 @@
 
         <section id="learn-more" class="section section-callout">
             <div class="container">
-                <h2>Start your Linux journey today</h2>
-                <p>Whether you are building a server cluster, deploying containers, or learning development workflows, Linux gives you a professional platform with strong tooling and community support.</p>
-                <a href="https://www.kernel.org" target="_blank" rel="noreferrer" class="btn btn-primary">Visit kernel.org</a>
+                <h2>Begin vandaag nog je Linux reis</h2>
+                <p>Of je nu een servercluster bouwt, containers implementeert, of ontwikkelworkflows leert, Linux geeft je een professioneel platform met sterke tooling en community-ondersteuning.</p>
+                <a href="https://www.kernel.org" target="_blank" rel="noreferrer" class="btn btn-primary">Bezoek kernel.org</a>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
         <div class="container footer-inner">
-            <p>LinuxPro © 2026 · Open source education and insight</p>
+            <p>LinuxPro © 2026 · Open source educatie en inzicht</p>
         </div>
     </footer>
+    <script src="translations.js"></script>
 </body>
 
 </html>
